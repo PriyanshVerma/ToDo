@@ -11,9 +11,50 @@
         android:id="@+id/titleEditText"/>
 
     <EditText
+        android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
-        android:id="@+id/descriptionEditText"/>
+        android:hint="Description" />
 
-</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="67dp"
+            android:layout_height="70dp"
+            android:background="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Press icon to set Date" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/timeBtn"
+            android:layout_width="67dp"
+            android:layout_height="70dp"
+            android:background="@drawable/clock" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeTextView"
+            android:textSize="18dp"
+                android:hint="Press icon to set Time"/>
+
+        </LinearLayout>
+
+    </LinearLayout>

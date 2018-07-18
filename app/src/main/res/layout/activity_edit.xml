@@ -8,22 +8,54 @@
     android:gravity="center"
     tools:context=".EditActivity">
 
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/savebtn"
+        android:src="@drawable/edit" />
+
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="Name"
         android:id="@+id/nameEditText"
         />
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="Description"
         android:id="@+id/descriptionEditText"
         />
 
-    <Button
+    <TextView
+        android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="save"
+        android:text="Please set date and time again"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:focusable="false"
+        android:id="@+id/dateEditText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:focusable="false"
+        android:id="@+id/timeEditText"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="saveEdit"
-        android:id="@+id/saveBtn"/>
+        android:text="save changes"
+        android:backgroundTint="@color/savebtn"/>
 
 </LinearLayout>
